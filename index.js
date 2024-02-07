@@ -3,6 +3,7 @@ const cors = require("cors");
 const quizRouter = require('./router/quiz.router')
 const {loginRouter,signupRouter} = require('./router/auth.router');
 const routeNotFound = require('./middleware/routeNotFound')
+const categoriesRouter = require("./router/categories.router");
 const quizzes = require('./db/quizzes')
 require("dotenv").config();
 
@@ -13,8 +14,9 @@ app.use(express.json());
 const PORT = 3000;
 
 app.get("/",(req,res)=>{
-    res.json(quizzes);
+    res.json("Hellow Samuel");
 })
+app.use("/categories", categoriesRouter)
 app.use("/quiz", quizRouter);
 app.use("/auth/login",loginRouter)
 app.use("/auth/signup",signupRouter)
