@@ -156,6 +156,59 @@ const quizzes = {
                 },
             ]
         },
+        {
+            id: uuid(),
+            category: "marvel",
+            image: "https://parade.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTkwNTgwOTkzMTk0MDc1MjYx/marvel-quiz-copy.webp",
+            title: "Marvel",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique quis nunc eget rutrum",
+            quiz: [
+                //1st question and options
+                {
+                    id: uuid(),
+                    question: "Black Panther is set in which fictional country?",
+                    options: [
+                        { id: uuid(), option: "Wakanda", isCorrect: true },
+                        { id: uuid(), option: "Takanda", isCorrect: false },
+                        { id: uuid(), option: "Zakanda", isCorrect: false },
+                        { id: uuid(), option: "Jakanda", isCorrect: false }
+                    ]
+                },
+                 //2nd question and options
+                {
+                    id: uuid(),
+                    question: "Who rescued Tony Stark and Nebula from space?",
+                    options: [
+                        { id: uuid(), option: "Captain America", isCorrect: false },
+                        { id: uuid(), option: "Captain Marvel", isCorrect: true },
+                        { id: uuid(), option: "Thor", isCorrect: false },
+                        { id: uuid(), option: "Hulk", isCorrect: false }
+                    ]
+                },
+                 //3rd question and options
+                {
+                    id: uuid(),
+                    question: "Thor's Mjolnir is made from the metal of a dying ___?",
+                    options: [
+                        { id: uuid(), option: "Nebula", isCorrect: false },
+                        { id: uuid(), option: "Moon", isCorrect: false },
+                        { id: uuid(), option: "Star", isCorrect: true },
+                        { id: uuid(), option: "Sun", isCorrect: false }
+                    ]
+                },
+                 //4th question and options
+                {
+                    id: uuid(),
+                    question: "What did Thor say about Jane Foster's catchphrase?",
+                    options: [
+                        { id: uuid(), option: "It's Crap", isCorrect: false },
+                        { id: uuid(), option: "That's Bullshit", isCorrect: false },
+                        { id: uuid(), option: "What ever", isCorrect: false },
+                        { id: uuid(), option: "It's perfect", isCorrect: true }
+                    ]
+                },
+            ]
+        },
     ]
 }
 
